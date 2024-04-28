@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const { autoUpdater } = require('electron-updater');
 const log = require('electron-log');
@@ -65,6 +65,17 @@ autoUpdater.on('update-available', () => {
 
 autoUpdater.on('update-downloaded', () => {
   sendStatusToWindow('Update has been downloaded....')
+  dialog.showMessageBox(mainWindow, {
+    message: 'New version downloaded, restart app now or restart later?',
+    type: 'question',
+    buttons: ['Restart app', 'Restart later'],
+    noLink: true,
+  }).then( result => {
+    if(result.response === 0) {
+      autoUpdater.autoRunAppAfterInstall = true
+      autoUpdater.quitAndInstall()
+    }
+  })
   mainWindow.webContents.send('update_downloaded')
 })
 

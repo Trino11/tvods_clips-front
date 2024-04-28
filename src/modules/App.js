@@ -1,5 +1,6 @@
 import './App.css';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 const isNative = () => {
   // const urlParams = new URLSearchParams(window.location.search);

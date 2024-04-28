@@ -96,17 +96,16 @@ autoUpdater.on('download-progress', function (progressObj) {
   sendStatusToWindow(log_message)
 })
 
-// Check for an update 10sec after Program Starts
-setTimeout(function () {
-  sendStatusToWindow('We are checking for updates and notifying user...')
-  autoUpdater.checkForUpdatesAndNotify()
-}, 10000)
-
 // Check for an update every 2min.
 setInterval(function () {
   sendStatusToWindow('We are checking for updates and notifying user...')
   autoUpdater.checkForUpdatesAndNotify()
 }, 120000)
+
+setTimeout(() => {
+  sendStatusToWindow('We are checking for updates and notifying user...')
+  autoUpdater.checkForUpdatesAndNotify()
+}, 5000);
 
 function sendStatusToWindow(message) {
   log.info(message)

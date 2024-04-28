@@ -30,6 +30,28 @@
     "build-react": "react-scripts build",
     "dist": "electron-builder --win"
   },
+  "build": {
+    "appId": "com.trinohost.tvods_clips",
+    "productName": "TVods Clips",
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://git.trinohost.com/api/v4/projects/12/jobs/artifacts/main/raw/dist?job=build"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "verifyUpdateCodeSignature": false
+    },
+    "files": [
+      "electron.js",
+      "node_modules/",
+      "package.json",
+      "build/"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

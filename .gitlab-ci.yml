@@ -1,6 +1,6 @@
 image: node:18
 
-build:
+build-executable:
   before_script:
   - dpkg --add-architecture i386
   - apt-get update -y

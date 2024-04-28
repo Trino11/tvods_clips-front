@@ -3,6 +3,9 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const log = require('electron-log');
+
+const { appUpdater } = require('./autoupdater');
+
 log.info('Hello, log')
 
 let mainWindow;

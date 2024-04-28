@@ -1,6 +1,6 @@
 {
   "name": "tvods_clips",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./public/electron.js",
   "author": "Trino",
   "description": "",

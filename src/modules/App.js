@@ -10,7 +10,7 @@ const isNative = () => {
 
 window.tvodsconfig = {
   MANIFEST_URL: 'https://cdn.trinohost.com/webdavshare/tmods/manifest.json',
-  VERSION: '0.0.2',
+  VERSION: '0.0.3',
   NATIVE_APP: isNative(),
 };
 

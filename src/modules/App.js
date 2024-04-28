@@ -10,7 +10,7 @@ const isNative = () => {
 
 window.tvodsconfig = {
   MANIFEST_URL: 'https://cdn.trinohost.com/webdavshare/tmods/manifest.json',
-  VERSION: '0.0.5',
+  VERSION: '0.0.6',
   NATIVE_APP: isNative(),
 };
 
@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div className='App'>
         <main>
-          <p>v.{window.tvodsconfig.VERSION} - {window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador'}</p>
+          <p className='p-2'>v.{window.tvodsconfig.VERSION} - {window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador'}</p>
         </main>
       </div>
     </Router>

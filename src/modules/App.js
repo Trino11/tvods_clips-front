@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div className='App'>
         <main>
-          <p>v.{tvodsconfig.VERSION} - {" | " + (window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador')}</p>
+          <p>v.{window.tvodsconfig.VERSION} - {" | " + (window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador')}</p>
         </main>
       </div>
     </Router>

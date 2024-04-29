@@ -11,7 +11,7 @@ build-executable:
 
   script:
     - npm install
-    - npm run build-linux
+    - npm run build-win
   artifacts:
     paths:
       - dist/*.*

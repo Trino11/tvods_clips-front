@@ -21,16 +21,18 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start": "concurrently \"npm run start-react\" \"npm run start-electron\"",
+    "start": "concurrently \"npm run start-react\" \"npm run start-electron-win\"",
     "start-mac": "concurrently \"npm run start-react\" \"npm run start-electron-mac\"",
     "start-react": "react-scripts start",
-    "start-electron": ".\\node_modules\\.bin\\electron .",
+    "start-electron-win": ".\\node_modules\\.bin\\electron .",
     "start-electron-mac": "./node_modules/.bin/electron .",
     "electron-dev": "cross-env ELECTRON_START_URL=http://localhost:3000 electron .",
-    "build": "npm run build-react && npm run dist",
-    "build-linux": "npm run build-react && npm run dist",
+    "build": "npm run build-react && npm run dist-win",
+    "build-win": "npm run build-react && npm run dist-win",
+    "build-mac": "npm run build-react && npm run dist-mac",
     "build-react": "react-scripts build",
-    "dist": "electron-builder --win"
+    "dist-win": "electron-builder --win",
+    "dist-mac": "electron-builder --mac"
   },
   "build": {
     "appId": "com.trinohost.tvods_clips",

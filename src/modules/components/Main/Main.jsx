@@ -7,7 +7,7 @@ import Home from '../pages/Home/Home';
 import Recents from '../pages/Recents/Recents';
 import Top from '../pages/Top/Top';
 
-function Main() {
+export default function Main() {
   return (
     <main>
       <div className='flex'>
@@ -31,5 +31,3 @@ function Main() {
     </main>
   )
 }
-
-export default Main;

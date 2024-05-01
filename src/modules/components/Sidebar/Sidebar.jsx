@@ -6,7 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 
-function Sidebar() {
+export default function Sidebar() {
   return <div className='h-screen bg-slate-100 border-r-2'>
     <ul>
       <li>
@@ -31,5 +31,3 @@ function Sidebar() {
     <Outlet />
   </ div>
 }
-
-export default Sidebar;

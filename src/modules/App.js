@@ -23,15 +23,15 @@ function App() {
   return (
     <div className='App'>
       {
-        ( window.tvodsconfig.NATIVE_APP )
-        ?
-        <HashRouter>
-          <Main />
-        </HashRouter>
-        :
-        <BrowserRouter>
-          <Main />
-        </BrowserRouter>
+        (window.tvodsconfig.NATIVE_APP)
+          ?
+          <HashRouter>
+            <Main />
+          </HashRouter>
+          :
+          <BrowserRouter>
+            <Main />
+          </BrowserRouter>
       }
 
       <p className='fixed right-1 bottom-0'>v.{window.tvodsconfig.VERSION} - {window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador'} - {window.tvodsconfig.DEV ? 'desarrollo' : 'production'}</p>

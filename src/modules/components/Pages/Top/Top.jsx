@@ -1,7 +1,7 @@
 function Top() {
-    return (
+  return (
     <div>
-        Im the top page
+      Im the top page
     </div>)
 }
 

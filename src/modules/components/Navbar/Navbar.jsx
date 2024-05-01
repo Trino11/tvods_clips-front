@@ -1,7 +1,7 @@
 function Navbar() {
-    return (
+  return (
     <div>
-        Im the navbar
+      Im the navbar
     </div>)
 }
 

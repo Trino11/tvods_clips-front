@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.w-sidebar{
+.w-sidebar {
     width: 10rem;
 }
 
-.w-content{
+.w-content {
     width: calc(100vw - 10rem);
 }

@@ -3,9 +3,9 @@ import { Route, Routes } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
 
-import Home from '../Pages/Home/Home';
-import Recents from '../Pages/Recents/Recents';
-import Top from '../Pages/Top/Top';
+import Home from '../pages/Home/Home';
+import Recents from '../pages/Recents/Recents';
+import Top from '../pages/Top/Top';
 
 function Main() {
   return (

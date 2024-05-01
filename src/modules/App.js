@@ -1,6 +1,9 @@
 import './App.css';
-// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { HashRouter as Router } from 'react-router-dom';
+
+import { HashRouter, BrowserRouter } from 'react-router-dom';
+
+import Main from './components/Main/Main';
+
 
 const isNative = () => {
   // const urlParams = new URLSearchParams(window.location.search);
@@ -18,13 +21,21 @@ document.title += (" | " + (window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'nave
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        <main>
-          <p className='p-2'>v.{window.tvodsconfig.VERSION} - {window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador'}</p>
-        </main>
-      </div>
-    </Router>
+    <div className='App'>
+      {
+        ( window.tvodsconfig.NATIVE_APP )
+        ?
+        <HashRouter>
+          <Main />
+        </HashRouter>
+        :
+        <BrowserRouter>
+          <Main />
+        </BrowserRouter>
+      }
+
+      <p className='fixed right-1 bottom-0'>v.{window.tvodsconfig.VERSION} - {window.tvodsconfig.NATIVE_APP ? 'app nativa' : 'navegador'} - {window.tvodsconfig.DEV ? 'desarrollo' : 'production'}</p>
+    </div>
   );
 }
 

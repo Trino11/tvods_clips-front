@@ -9,7 +9,8 @@ log.info('Hello, log')
 let mainWindow;
 
 // const isDev = process.env.NODE_ENV !== 'production';
-const isDev = false;
+// const isDev = false;
+const isDev = !app.isPackaged;
 
 function createWindow() {
   mainWindow = new BrowserWindow({

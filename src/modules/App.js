@@ -2,7 +2,7 @@ import './App.css';
 
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 
-import Main from './components/Main/Main';
+import Main from './Main/Main';
 
 
 const isNative = () => {

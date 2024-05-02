@@ -25,3 +25,9 @@
       @apply bg-blue-200;
     }
 }
+
+@layer components {
+  * {
+    @apply bg-slate-100;
+  }
+}

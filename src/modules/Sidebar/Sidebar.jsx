@@ -2,19 +2,13 @@ import './Sidebar.css';
 
 import { Outlet, NavLink } from 'react-router-dom';
 
-import TvIcon from '@mui/icons-material/Tv';
 import HomeIcon from '@mui/icons-material/Home';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 
-export default function Sidebar() {
-  return <div className='bg-slate-100 py-4 border-r-2 h-screen'>
-    <NavLink to='/' className='pb-0 font-semibold text-2xl text-black sidebar-pill'>
-      <TvIcon className='sidebar-icon' />
-      TVods
-    </NavLink>
-
-    <div className="mx-3 my-3 border-t-2" />
+export default function Sidebar({ className }) {
+  return <div className={'top-12 fixed py-1 border-r-2 h-full ' + className}>
+    {/* <div className="mx-3 my-3 border-t-2" /> */}
 
     <ul className=''>
       <li>

@@ -15,17 +15,13 @@ export default function Main() {
           <Sidebar />
         </div>
         <div className='w-content'>
-          <div className='navbar-wrapper'>
-            <Navbar />
-          </div>
-          <div className='content-wrapper'>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/home' element={<Home />} />
-              <Route path='/recents' element={<Recents />} />
-              <Route path='/top' element={<Top />} />
-            </Routes>
-          </div>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/recents' element={<Recents />} />
+            <Route path='/top' element={<Top />} />
+          </Routes>
         </div>
       </div>
     </main>

@@ -1,5 +1,7 @@
 import './Sidebar.css';
 
+import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 
 import HomeIcon from '@mui/icons-material/Home';

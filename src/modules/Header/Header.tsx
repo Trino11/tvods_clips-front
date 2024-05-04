@@ -1,9 +1,11 @@
 import './Header.css'
 
+import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 
 import TvIcon from '@mui/icons-material/Tv';
-import Searchbar from './Searchbar';
+import Searchbar from '../core/design-system/Searchbar.tsx';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -13,8 +15,6 @@ import Badge from '@mui/material/Badge';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
-
-
 
 export default function Navbar({ className }) {
 
@@ -41,15 +41,7 @@ export default function Navbar({ className }) {
           <NotificationsIcon />
         </Badge>
       </IconButton>
-      <IconButton
-        size="large"
-        edge="end"
-        aria-label="account of current user"
-        aria-controls=''
-        aria-haspopup="true"
-        onClick=''
-        color="inherit"
-      >
+      <IconButton>
         <AccountCircle />
       </IconButton>
     </Box>

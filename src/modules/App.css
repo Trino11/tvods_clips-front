@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.w-sidebar {
-    width: 14rem;
-}
-
 .w-content {
-    width: calc(100vw - 14rem);
+  max-width: calc(100vw - 14rem);
 }
 
 @layer components {
-    .sidebar-icon {
-      @apply mr-2 w-7 h-7 !important;
-      /* @apply ; */
-    }
+  .sidebar-icon {
+    @apply mr-2 w-7 h-7 !important;
+    /* @apply ; */
+  }
+}
+
+@layer components {
+  .sidebar-pill {
+    @apply flex items-center mx-4 my-2 px-2 py-1 rounded-lg text-gray-500 hover:text-gray-700;
   }
 
-  @layer components {
-    .sidebar-pill {
-      @apply flex items-center mx-4 my-2 px-2 py-1 rounded-lg text-gray-500 hover:text-gray-700;
-    }
-    .sidebar-pill-active {
-      @apply bg-blue-200;
-    }
+  .sidebar-pill-active {
+    @apply bg-blue-200;
+  }
 }
 
 @layer components {

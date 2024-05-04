@@ -7,7 +7,7 @@ import '@fontsource/roboto/700.css';
 
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 
-import Main from './Main/Main';
+import Main from './Main/Main.tsx';
 
 
 const isNative = () => {

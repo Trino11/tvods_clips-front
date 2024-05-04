@@ -1,11 +1,13 @@
+import React from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 
-import Header from '../Header/Header';
-import Sidebar from '../Sidebar/Sidebar';
+import Header from '../Header/Header.tsx';
+import Sidebar from '../Sidebar/Sidebar.tsx';
 
-import Home from '../pages/Home/Home';
-import Recents from '../pages/Recents/Recents';
-import Top from '../pages/Top/Top';
+import Home from '../pages/Home/Home.tsx';
+import Recents from '../pages/Recents/Recents.tsx';
+import Top from '../pages/Top/Top.tsx';
 
 export default function Main() {
   return (
@@ -13,7 +15,7 @@ export default function Main() {
       <Header className='top-0 left-0 fixed h-12' />
       <div className='flex'>
         <Sidebar className='w-56' />
-        <div className='mt-12 ml-56'>
+        <div className='flex-1 mt-12 ml-56 w-content overflow-x-hidden'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />

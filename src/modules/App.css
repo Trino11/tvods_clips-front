@@ -27,7 +27,7 @@
 }
 
 @layer components {
-  * {
+  html {
     @apply bg-slate-100;
   }
 }

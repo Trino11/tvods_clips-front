@@ -1,6 +1,6 @@
 import './Sidebar.css';
 
-import { Outlet, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import HomeIcon from '@mui/icons-material/Home';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
@@ -30,6 +30,5 @@ export default function Sidebar({ className }) {
         </NavLink>
       </li>
     </ul>
-    <Outlet />
   </ div>
 }

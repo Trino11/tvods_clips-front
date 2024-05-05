@@ -1,5 +1,5 @@
 import React from 'react'
-import { VideoModel } from './VideoModel'
+import { VideoModel } from '../models/VideoModel'
 
 export default function VideoCard({ video }: { video: VideoModel }) {
   return <div className='max-w-96'>

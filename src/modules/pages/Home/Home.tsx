@@ -1,22 +1,14 @@
 import React from "react";
 
 import CategoryHolder from "../../core/design-system/CategoryHolder.tsx";
-import VideoCard from "../../Videos/VideoCard.tsx";
+import VideoCard from "../../Videos/components/VideoCard.tsx";
 
-import someVideo from "../../../fakeData/someVideo.ts";
+import { getRecentVideos, getTopVideos } from "../../Videos/services/VideoServices.ts";
 
 export default function Home() {
+
   return <div>
-    Im the home page
-    <CategoryHolder title='Recents'>
-      <VideoCard video={someVideo()} />
-      <VideoCard video={someVideo()} />
-      <VideoCard video={someVideo()} />
-    </CategoryHolder>
-    <CategoryHolder title='Hot'>
-      <VideoCard video={someVideo()} />
-      <VideoCard video={someVideo()} />
-      <VideoCard video={someVideo()} />
-    </CategoryHolder>
+    <CategoryHolder title='Recents' route="recents" videos={getRecentVideos} />
+    <CategoryHolder title='Top' route="top" videos={getTopVideos} />
   </div>
 }

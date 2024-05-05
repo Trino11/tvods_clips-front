@@ -1,4 +1,4 @@
-import { VideoModel } from "../modules/Videos/VideoModel";
+import { VideoModel } from "../modules/Videos/models/VideoModel";
 
 export default function someVideo(): VideoModel{
   return {

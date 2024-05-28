@@ -6,6 +6,26 @@
   max-width: calc(100vw - 14rem);
 }
 
+.w-31\/100 {
+  width: 31%;
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-31\/100 {
+    width: 31%;
+  }
+}
+
+.w-48\/100 {
+  width: 48%;
+}
+
+@media (min-width: 768px) {
+  .md\:w-48\/100 {
+    width: 48%;
+  }
+}
+
 /* Works for Chrome, Safari, and other WebKit browsers */
 /* Width */
 
